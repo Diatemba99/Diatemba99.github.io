@@ -1,0 +1,535 @@
+/* =================================================================================================== */
+/* =================================================================================================== */
+/* ===============================              Navs bars                  =========================== */
+/* =================================================================================================== */
+/* =================================================================================================== */
+*
+{
+   padding: 0;
+   margin: 0;
+   /* text-decoration: none;
+   list-style: none;
+   box-sizing: border-box; */
+}
+
+body
+{
+   font-family: Verdana;
+   cursor: url(../img/c.png),auto;
+
+}
+     
+nav
+{
+   background: #0082e6;
+   height: 80px;
+   width: 100%;
+}
+
+
+span.logo
+{
+   /* width:100px; */
+   line-height: 80px;
+   padding: 0 100px;
+}
+
+span.logo a:hover
+{
+  text-decoration: none;
+}
+
+nav ul
+{
+   float: right;
+   margin-right: 20px;
+   z-index: 1000 !important;
+
+}
+
+
+nav ul li
+{
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 5px;
+}
+
+
+nav ul li a
+{
+   color: white;
+   font-size: 17px;
+   padding: 7px 13px;
+   border-radius: 3px;
+   text-transform: uppercase;
+
+}
+
+
+a.active, a:hover
+{
+   background: #1b9bff;
+   transition: .5s;
+}
+
+
+.chbtn
+{
+   font-size: 30px;
+   color: white;
+   float: right;
+   line-height: 80px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+}
+
+
+#check
+{
+   display: none;
+}
+
+
+@media (max-width:952px)
+{
+ .icons
+ {
+   padding-left: 30% !important;
+ }
+ .reseau
+ {
+  padding-left: 30% !important;
+ }
+ .service
+ {
+  padding-right: 30% !important;
+ }
+
+ .last iframe
+ {
+ overflow: hidden;
+}
+  span.logo
+    {
+       font-size: 16px;
+       padding-left: 50px;
+    }
+   nav ul li a
+    {
+       font-size: 16px;
+    }
+   
+}
+
+@media (max-width:858px)
+{
+  .service 
+ {
+  padding-right: 30% !important;
+ }
+  .icons
+ {
+   padding-left: 30% !important;
+ }
+ .reseau
+ {
+  padding-left: 30% !important;
+
+ }
+  .chbtn
+    {
+       display: block; 
+    }
+
+
+   ul
+    {
+       position: fixed;
+       width: 100%;
+       height: 100vh;
+       background: #2c3e50;
+       top: 80px;
+       left: -100%;
+       text-align: center;
+       transition: all .5s;
+    }
+
+
+   nav ul li
+    {
+       display: block;
+       margin: 50px 0;
+       line-height: 30px;
+    }
+
+
+   nav ul li a
+    {
+       font-size: 20px;
+    }
+
+   a:hover,a.active
+    {
+       background: none;
+       color: #0082e6;
+    }
+   #check:checked ~ ul
+    {
+       left: 0;
+    }    
+}
+
+
+/* =================================================================================================== */
+/* =================================================================================================== */
+/* ===============================              search                     =========================== */
+/* =================================================================================================== */
+/* =================================================================================================== */
+
+
+/* span
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background:url(../img/c.png);
+    background-size: cover;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translate(-50%,-50%);
+        opacity: 1;
+    }
+    100%
+    {
+        transform: translate(-50%,-1000%);
+        opacity: 0;
+    }
+} */
+
+
+
+
+
+
+/* =================================================================================================== */
+/* =================================================================================================== */
+/* ===============================              UPBTN                 =========================== */
+/* =================================================================================================== */
+/* =================================================================================================== */
+
+
+
+.my_bttn
+{
+	height: 45px;
+	width: 45px;
+	background: #F90F60;
+	border:none;
+	color:white;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: none;
+}
+
+.my_bttn:hover
+{
+ transform: scale(1.2);
+}
+
+
+/* =================================================================================================== */
+/* =================================================================================================== */
+/* ===============================              compteurs                  =========================== */
+/* =================================================================================================== */
+/* =================================================================================================== */
+.icons
+{
+  z-index: -5;
+}
+
+.icons
+{
+  color: #00bcd4 !important;
+  z-index: 1000 !important;
+}
+
+.card-title
+{
+  color: #00bcd4 !important;
+}
+
+.icons .card-title
+{
+  color: #010615 !important;
+
+}
+
+
+/* =================================================================================================== */
+/* =================================================================================================== */
+/* ===============================              services                  =========================== */
+/* =================================================================================================== */
+/* =================================================================================================== */
+
+.containerS
+{
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cardS
+{
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 300px 0 50px rgba(0, 0,0,.5);
+}
+.cardS:hover
+{ 
+    z-index: 1000;
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0,0,.5);
+}
+
+.cardS .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+}
+.cardS:hover .imgBx
+{
+    transform: rotateY(-135deg);
+}
+
+.cardS .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardS .details
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+/* =================================================================================================== */
+/* =================================================================================================== */
+/* ===============================              team                  =========================== */
+/* =================================================================================================== */
+/* =================================================================================================== */
+
+.body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;   
+  background-color: #010615;
+}
+
+.boxt
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    background: #060c21;
+    transition: .5s;
+
+}
+
+.boxt:hover
+{
+    height: 400px;
+}
+
+.boxt .imgBxt
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.boxt .imgBxt img
+{
+    max-width: 100%;
+    opacity: 0.1;
+    transition: .5s;
+}
+
+.boxt:hover .imgBxt img
+{
+    opacity: 1;
+}
+
+.boxt::before
+{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+ 
+
+.boxt::after
+{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+}
+ 
+.boxt::before,
+.boxt::after
+{
+    background: linear-gradient(235deg,
+                             #89ff00,
+                             #010615,
+                             #00bcd4);
+}
+
+.boxt:nth-child(2)::before,
+.boxt:nth-child(2)::after
+{
+    background: linear-gradient(235deg,
+                             #ff005e,
+                             #010615,
+                             #fbff00);
+}
+
+.boxt:nth-child(3)::before,
+.boxt:nth-child(3)::after
+{
+    background: linear-gradient(235deg,
+                             #772aff,
+                             #010615,
+                             #2196F3);
+}
+.boxt .cont
+{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background-color: rgba(0, 0,0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
+}
+.boxt:hover .cont
+{
+    opacity: 1;
+}
+
+.boxt .cont h2
+{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20;
+    letter-spacing: 1px;
+}
+
+.boxt .cont h2 span
+{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 2px;
+} 
+
+/* =================================================================================================== */
+/* =================================================================================================== */
+/* ===============================              social                  =========================== */
+/* =================================================================================================== */
+/* =================================================================================================== */
+
+.reseau div a:hover i
+{
+  text-decoration: none !important;
+}
+
+.reseau .fa-youtube
+{
+  color: red !important;
+}
+
+.reseau .fa-instagram
+{
+  color: #ea3145 !important;
+}
+
+.reseau .fa-snapchat-ghost
+{
+  color: yellow !important;
+}
+
+.reseau .fa-facebook
+{
+  color: #3e68c0 !important;
+}
+.reseau .fa-twitter
+{
+  color: #23abff !important;
+}
+
+.reseau .fa-whatsapp
+{
+  color: #1EBEA5 !important;
+}
