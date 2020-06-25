@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ========= css =========== -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--  ========= animate css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/css/mdb.min.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+<!-- =================================================================================================== -->
+<!-- =================================================================================================== -->
+<!-- ===============================              Navs bars                  =========================== -->
+<!-- =================================================================================================== -->
+<!-- =================================================================================================== -->
+<nav>
+  <input type="checkbox" id="check">
+  <label for="check" class="chbtn">
+      <i class="fas fa-bars"></i>
+  </label>
+  <!-- <label for="" class="logo"></label> -->
+  <span class="logo"><a href="../index.html"><img src="../img/mabu.png" width="14%" alt=""></a></span>
+  <ul>
+      <li><a href="../index.html" class="active">Accueil</a></li>
+      <li><a href="../pages/services.html">Livres</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+<div class="container">
+    <!--Section: Contact v.2-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contacter nous</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Avez-vous des questions? N'hésitez pas à nous contacter directement. Notre équipe reviendra vers vous en quelques heures pour vous aider.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Nom</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Objet</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Envoyer</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Dakar, SC 94126, SN</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 221 33 854 02 00</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>contact@mabu.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+</div>
+
+
+<div class="container mt-4 mb-5">
+    <div class="row reseau">
+        <div class="col-sm"> <a href="https://www.youtube.com/"> <i class="fab fa-youtube fa-7x"></i>         </a>              </div>
+        <div class="col-sm"> <a href="https://www.instagram.com/"> <i class="fab fa-instagram fa-7x"></i>       </a>             </div>
+        <div class="col-sm"> <a href="https://www.snapchat.com/"> <i class="fab fa-snapchat-ghost fa-7x"></i>  </a>             </div>
+        <div class="col-sm"> <a href="https://web.facebook.com/"> <i class="fab fa-facebook fa-7x"></i>    </a>              </div>
+        <div class="col-sm"> <a href="https://twitter.com/"> <i class="fab fa-twitter fa-7x"></i>     </a>              </div>
+        <div class="col-sm"> <a href="https://web.whatsapp.com/"> <i class="fab fa-whatsapp fa-7x"></i>    </a>              </div>
+      </div>
+</div>
+
+
+
+
+
+
+<div class="container" >
+    <div class="card mb-3" style="max-width: 1000px;">
+    <iframe  src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d88324.19868852814!2d2.143708898375147!3d46.22773537296644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2sFrance!3m2!1d46.227638!2d2.213749!4m0!5e0!3m2!1sfr!2ssn!4v1587176176678!5m2!1sfr!2ssn" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</div>
+
+
+<!-- ================================================================================================================ -->
+<!-- ================================================================================================================ -->
+<!-- ===================================              footer          =============================================== -->
+<!-- ================================================================================================================ -->
+<!-- ================================================================================================================ -->
+
+<footer class="page-footer font-small blue">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+       <a href="https://mdbootstrap.com/"> mabu.com</a>
+    </div>
+</footer>
+<!-- js -->
+<script src="./js/script.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/js/mdb.min.js"></script>
+</body>
+</html>
