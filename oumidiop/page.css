@@ -1,0 +1,744 @@
+* {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  /* color: #7d7d7d; */
+}
+
+/*
+::before et ::after est utilisé pour ajouter du contenu à un élément via la
+propriété CSS content.
+
+::before crée un pseudo-élément qui sera le premier enfant de l'élément ciblé 
+
+::after crée un pseudo-élément qui sera le dernier enfant de l'élément sélectionné
+*/
+
+
+
+/*================================ media queries ================================*/
+@media only screen and (max-width: 760px) {
+  .carousel-item {
+    /* height: 100vh; */
+  }
+}
+
+@media only screen and (min-width: 761px) {
+  .carousel-item {
+    /* height: 100vh; */
+  }
+  .card .thumbnail_card {
+    height: 350px;
+  }
+  .card .thumbnail_card .img_thumbnail {
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .about_info {
+    margin-top: 10px;
+    /* padding-left: 13px; */
+    padding-top: 15px;
+  }
+}
+
+/*================================ Navbar ================================*/
+
+/* Navbar CSS */
+
+.navbar {
+  background-color: transparent;
+}
+
+.Ize_Logo_nav {
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  font-family: "Niconne", cursive;
+  text-shadow: 1px 1px 0px #eb452b, 3px 3px 0px #efa032, 5px 5px 0px #46b59b,
+    7px 7px 0px #017e7f, 9px 9px 0px #052939, 11px 10px 0px #c11a2b,
+    13px 13px 0px #c11a2b, 15px 15px 0px #c11a2b, 17px 17px 0px #c11a2b;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .nav-item a {
+  color: white;
+  font-size: 20px;
+  padding-left: 35px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.5;
+  transition: all 0.5s ease-out;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .nav-item a:hover {
+  color: #c50627;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .nav-item a.active,
+.navbar .container .navbar-collapse .navbar-nav .nav-item a:focus {
+  color: blue;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .nav-item a.active::before,
+.navbar .container .navbar-collapse .navbar-nav .nav-item a:focus::before {
+  color: blue;
+}
+
+/* CSS button toggler */
+
+/* .navbar .navbar-toggler {
+  width: 80px;
+  height: 80px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+  width: 50px;
+  height: 6px;
+  background-color: white;
+  position: relative;
+  border-radius: 100%;
+  transition: all 0.5s ease-in-out;
+  box-shadow: none;
+  border: none;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background-color: white;
+  border-radius: 100%;
+  transition: all 0.5s ease-in-out;
+  box-shadow: none;
+  border: none;
+}
+
+.navbar-toggler-icon::before {
+  transform: translateY(-16px) translateX(-24px);
+  box-shadow: none;
+  border: none;
+}
+
+.navbar-toggler-icon::after {
+  transform: translateY(16px) translateX(-24px);
+  box-shadow: none;
+  border: none;
+} */
+
+/* Animation Button toggler */
+
+/* .navbar-toggler.open .navbar-toggler-icon {
+  transform: translateX(-50px);
+  box-shadow: none;
+  border: none;
+}
+
+.navbar-toggler.open .navbar-toggler-icon::before {
+  transform: rotate(45deg) translate(15px, -15px);
+  box-shadow: none;
+  border: none;
+}
+
+.navbar-toggler.open .navbar-toggler-icon::after {
+  transform: rotate(-45deg) translate(15px, 15px);
+  box-shadow: none;
+  border: none;
+} */
+
+/*================================ Carousel ================================*/
+
+.carousel-item {
+  /* L'unité de longueur CSS vh( viewport height : hauteur de la fenêtre)
+  est relative à la hauteur du bloc conteneur initial. 
+  1vh = à 1% de cette hauteur. */
+  height: 200vh;
+  
+
+  transition: 0.9s ease-in-out;
+}
+
+#carouselExampleIndicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin-left: 10px;
+}
+
+.carousel_item1 {
+  background: url("image/mi.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  
+}
+
+.carousel_item2 {
+  background: url("image/v.jpeg");
+  background-size: cover;
+  /* background-size: 100% 100%; */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel_item3 {
+  background: url("image/t.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-caption {
+  /* padding-bottom: 20px; */
+}
+
+.carousel-caption h5 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  line-height: 1.9;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.carousel-caption p {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 6.5s steps(40, end)
+    /* , blink-caret 0.75s step-end infinite */;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* La règle @keyframes permet aux auteurs de définir
+les étapes qui composent la séquence d'une animation CSS.
+Cela permet de contrôler une animation plus finement que
+ce qu'on pourrait obtenir avec les transitions. */
+
+/*================================ About ================================*/
+
+.about_section {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.about_section .container1 {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.h2_section_about {
+  font-size: 40px;
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.h3_section_about {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+  padding-top: 10px;
+}
+
+.about_section .content_about {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.about_section .about_img {
+  margin-bottom: 30px;
+  height: 200px;
+}
+
+.about_section .about_img img {
+  height: 200px;
+}
+
+.title_about_info {
+  font-weight: 600;
+  color: #1e1e1e;
+  font-size: 1.1rem;
+}
+
+.about_info .name,
+.about_info .profile,
+.about_info .mail,
+.about_info .phone {
+  font-size: 1.1rem;
+}
+
+/* Accordion */
+#accordion .panel {
+  border-radius: 0;
+  border: 0;
+  margin-top: 0px;
+}
+
+#accordion a {
+  display: block;
+  padding: 10px 15px;
+  color: black;
+  font-weight: 500;
+  border-bottom: 0.3px solid #b42b2b;
+  text-decoration: none;
+}
+
+#accordion .panel-heading a.collapsed:hover,
+#accordion .panel-heading a.collapsed:focus {
+  background-color: #b42b2b;
+  color: white;
+  transition: all 0.2s ease-in;
+}
+
+#accordion .panel-heading a.collapsed:hover::before,
+#accordion .panel-heading a.collapsed:focus::before {
+  color: white;
+}
+
+#accordion .panel-heading {
+  padding: 0;
+  border-radius: 0px;
+  text-align: center;
+}
+
+#accordion .panel-heading a:not(.collapsed) {
+  color: white;
+  background-color: #b42b2b;
+  transition: all 0.2s ease-in;
+}
+
+/* Add Indicator fontawesome icon to the left */
+#accordion .panel-heading .accordion-toggle::before {
+  font-family: "FontAwesome";
+  content: "\f00d";
+  float: left;
+  color: white;
+  font-weight: lighter;
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in;
+}
+
+#accordion .panel-heading .accordion-toggle.collapsed::before {
+  color: #b42b2b;
+  transform: rotate(-135deg);
+  transition: all 0.2s ease-in;
+}
+
+.title_accordion {
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.title_competence {
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.title_accordion:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #b42b2b;
+  width: 35px;
+  top: 30px;
+}
+
+.title_competence::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #b42b2b;
+  width: 67px;
+  top: 30px;
+}
+
+.competence_exemple {
+  font-weight: 600;
+}
+
+/* Title right */
+.title_right {
+  font-size: 2rem;
+  position: relative;
+}
+
+.title_right:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #b42b2b;
+  width: 115px;
+  top: 40px;
+}
+
+/*================================ Background attachement ================================*/
+
+.background_attachement1 {
+  background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.background_attachement2 {
+  background-image: url("https://images.unsplash.com/photo-1521453159160-6b5c58c24591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1324&q=80");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+/*================================ Services ================================*/
+/*
+
+#services {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.services_row {
+  padding-right: 10px;
+}
+
+.section-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.accent-text {
+  font-family: "Dancing Script", cursive;
+  color: #e52e2d;
+}
+
+.service-block {
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.service-block h3, p{
+  color: black;
+  text-decoration: none;
+}
+
+.txt_services:hover{
+  text-decoration: none;
+}
+
+.service-block .icon {
+  color: #e52e2d;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.service-block .icon:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.5) translateY(-10px);
+  transition: 0.6s all ease-in-out;
+}
+
+.service-block .service-icon-animate {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.hb:nth-child(1),
+.hb:nth-child(2),
+.hb:nth-child(3) {
+  border-bottom: 1px #a3a3a3 solid;
+}
+
+.vb:nth-child(1),
+.vb:nth-child(2),
+.vb:nth-child(4),
+.vb:nth-child(5) {
+  border-right: 1px #a3a3a3 solid;
+}
+
+@media screen and (max-width: 991px) {
+  .hb:nth-child(-n + 4) {
+    border-bottom: 1px #a3a3a3 solid;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hb:nth-child(5) {
+    border-bottom: 1px #a3a3a3 solid;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .vb:nth-child(1),
+  .vb:nth-child(2),
+  .vb:nth-child(4),
+  .vb:nth-child(5) {
+    border-right: none;
+  }
+  .vb:nth-child(2n + 1) {
+    border-right: 1px #a3a3a3 solid;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vb:nth-child(-n + 6) {
+    border-right: none;
+  }
+}*/
+
+/*================================ Portfolio ================================*/
+
+.h2_section_portfolio {
+  font-size: 40px;
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.h3_section_portfolio {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+.portfolio_box {
+  position: relative;
+  margin-bottom: 50px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #fff;
+}
+
+.txt_portfolio:hover{
+  text-decoration: none;
+}
+
+.portfolio_img {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 350px;
+}
+
+.portfolio_img img {
+  transition: all 1s ease-in-out;
+}
+
+.portfolio_box:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: 1s all ease-in-out;
+}
+
+.portfolio_box:hover .portfolio_box_title {
+  text-decoration: none;
+}
+
+.portfolio_box_content {
+  padding: 2rem 3% 1rem 4%;
+}
+
+.portfolio_box_content .portfolio_box_more {
+  color: #4e4e4e;
+  font-size: 0.8rem;
+}
+
+.portfolio_box_content .portfolio_box_more .portfolio_box_category {
+  color: #0078ff;
+}
+
+.portfolio_box_content .portfolio_box_plus {
+  font-size: 2rem;
+  color: #0078ff;
+  float: right;
+}
+
+.portfolio_box_title {
+  font-size: 1.2rem;
+  color: #c50627;
+}
+
+/*================================ Footer ================================*/
+
+.page_scroller_footer {
+  background-color: rgb(12, 11, 11);
+  margin-top: 60px;
+}
+
+.footer_social_network {
+  background-color: black;
+  border-bottom: 0.1px solid white;
+}
+
+.footer_get_connected {
+  color: white;
+  font-size: 17px;
+}
+
+.second_part_footer h6 {
+  color: white;
+}
+
+.text_color_grey {
+  color: rgb(163, 159, 155);
+}
+
+.text_color_white {
+  color: white;
+}
+
+/* réseaux sociaux */
+
+.all_icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #fff;
+  font-size: 20px;
+  margin-left: 20px;
+  display: inline-flex;
+  overflow: hidden;
+  border: 2px solid white;
+  transition: 0.6s all ease-in-out;
+  position: relative;
+}
+
+.icon {
+  color: black;
+  padding: 8px;
+  transition: 0.6s all ease-in-out;
+  position: relative;
+}
+
+.fb-icone {
+  padding-left: 3px;
+}
+
+.li-icone {
+  padding-left: 2px;
+}
+
+.all_icons a:hover {
+  text-decoration: none;
+  transform: rotateX(7deg) translateY(5px);
+  transition: 0.6s all ease-in-out;
+}
+
+.all_icons a:hover .icon {
+  color: white;
+  transform: rotate(360deg);
+  /* transform: rotateY(360deg); */
+  transition: 0.6s all ease-in-out;
+}
+
+.all_icons a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  /* width: 40px;
+  height: 40px; */
+  border-radius: 100%;
+  /* background: red; */
+  transition: 0.6s all ease-in-out;
+}
+
+.all_icons a:hover::before {
+  top: 0;
+}
+
+.fb-icone:hover::before {
+  background-color: #3b5999;
+}
+.tw-icone:hover::before {
+  background-color: #55acee;
+}
+.gplus-icone:hover::before {
+  background-color: #dd4b39;
+}
+.li-icone:hover::before {
+  background-color: #0077b5;
+}
+.inst-icone:hover::before {
+  background-color: red;
+}
+
+.footer_technology {
+  /* font-size: 18px; */
+}
+
+.footer_technology:hover {
+  text-decoration: none;
+  color: #c50627;
+  transition: 0.5s all ease-in-out;
+}
+
+.footer_liens:hover {
+  text-decoration: none;
+  color: #c50627;
+  transition: 0.5s all ease-in-out;
+}
+
+
+
+
+
